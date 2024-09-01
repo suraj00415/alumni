@@ -21,11 +21,13 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { useNavigate } from "react-router-dom"
 
 export default function SideBar() {
     const [scrollAreaHeight, setScrollAreaHeight] = useState(0);
     const [isCommentOpen, setIsCommentOpen] = useState(false)
     const [isCommentOpen2, setIsCommentOpen2] = useState(false)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const updateHeight = () => {
@@ -51,7 +53,7 @@ export default function SideBar() {
                         </div>
                     </CollapsibleTrigger>
                     <CollapsibleContent className='pl-5'>
-                        <div className='flex items-center gap-2 hover:bg-zinc-800 rounded-lg cursor-pointer p-2'>
+                        <div className='flex items-center gap-2 hover:bg-zinc-800 rounded-lg cursor-pointer p-2' onClick={()=>navigate('/institute') }>
                             <FaHome className='size-5 text-orange-400' />
                             <div>Home</div>
                         </div>
@@ -74,7 +76,7 @@ export default function SideBar() {
                     </CollapsibleContent>
                 </Collapsible>
                 <Collapsible>
-                    <CollapsibleTrigger  className=' ' onClick={() => setIsCommentOpen2((prev) => !prev)}>
+                    <CollapsibleTrigger className=' ' onClick={() => setIsCommentOpen2((prev) => !prev)}>
                         <div className='mt-5 hover:bg-zinc-800 p-1 rounded-lg flex items-center pr-5 font-bold text-lg'>
                             {!isCommentOpen2 && <IoMdArrowDropright className='size-7 text-orange-400' />}
                             {isCommentOpen2 && <IoMdArrowDropdown className="size-7 text-orange-400" />}
