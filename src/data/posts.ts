@@ -1,10 +1,10 @@
 export const posts = [
     {
         name: "Alice Watson",
-        profileImg: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725188737/bjekbfew1jq8dodvf8hu.jpg",
+        profileImg: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/rbto0t3kxl4u9yrhpgsv.jpg",
         timestamp: "Posted 10 min ago",
         content: "🚀 Hi friends, I'm fully back! 🎉 Beginner Cyber Security Project you NEED to get HIRED. 💼 I will take you down an aisle that revolves around a Beginner Cyber project to work on to enhance your skills, experience, and the possibility of getting hired. Walk down with me, friend! 💻",
-        image: "src/assets/images/g2.jpg",
+        image: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725188737/bjekbfew1jq8dodvf8hu.jpg",
         likes: 102,
         commentsCount: 10,
         comments: [
