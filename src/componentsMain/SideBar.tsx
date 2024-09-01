@@ -25,8 +25,8 @@ import { useNavigate } from "react-router-dom"
 
 export default function SideBar() {
     const [scrollAreaHeight, setScrollAreaHeight] = useState(0);
-    const [isCommentOpen, setIsCommentOpen] = useState(false)
-    const [isCommentOpen2, setIsCommentOpen2] = useState(false)
+    const [isCommentOpen, setIsCommentOpen] = useState(true)
+    const [isCommentOpen2, setIsCommentOpen2] = useState(true)
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -41,10 +41,11 @@ export default function SideBar() {
 
         return () => window.removeEventListener('resize', updateHeight);
     }, []);
+
     return (
-        <ScrollArea className="w-64 bg-zinc-900  p-5 border-r border-zinc-700" style={{ height: scrollAreaHeight }}>
+        <ScrollArea className="w-64 bg-zinc-900 p-5 border-r border-zinc-700" style={{ height: scrollAreaHeight }}>
             <div className="">
-                <Collapsible open>
+                <Collapsible open={isCommentOpen}>
                     <CollapsibleTrigger className=' ' onClick={() => setIsCommentOpen((prev) => !prev)}>
                         <div className='mt-5 hover:bg-zinc-800 p-1 rounded-lg flex items-center pr-5 font-bold text-lg'>
                             {!isCommentOpen && <IoMdArrowDropright className='size-7 text-orange-400' />}
@@ -53,7 +54,7 @@ export default function SideBar() {
                         </div>
                     </CollapsibleTrigger>
                     <CollapsibleContent className='pl-5'>
-                        <div className='flex items-center gap-2 hover:bg-zinc-800 rounded-lg cursor-pointer p-2' onClick={()=>navigate('/institute') }>
+                        <div className='flex items-center gap-2 hover:bg-zinc-800 rounded-lg cursor-pointer p-2' onClick={() => navigate('/institute')}>
                             <FaHome className='size-5 text-orange-400' />
                             <div>Home</div>
                         </div>
@@ -75,7 +76,7 @@ export default function SideBar() {
                         </div>
                     </CollapsibleContent>
                 </Collapsible>
-                <Collapsible open>
+                <Collapsible open={isCommentOpen2}>
                     <CollapsibleTrigger className=' ' onClick={() => setIsCommentOpen2((prev) => !prev)}>
                         <div className='mt-5 hover:bg-zinc-800 p-1 rounded-lg flex items-center pr-5 font-bold text-lg'>
                             {!isCommentOpen2 && <IoMdArrowDropright className='size-7 text-orange-400' />}
@@ -107,7 +108,9 @@ export default function SideBar() {
                 <div className="flex items-center gap-3">
                     <div className="">
                         <DropdownMenu>
-                            <DropdownMenuTrigger className="rounded-full border-2 border-orange-500"><img src="https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/qz4t9inrgnr4ojh4rcal.jpg" alt="" className="size-12 rounded-full" /></DropdownMenuTrigger>
+                            <DropdownMenuTrigger className="rounded-full border-2 border-orange-500">
+                                <img src="https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/qz4t9inrgnr4ojh4rcal.jpg" alt="" className="size-12 rounded-full" />
+                            </DropdownMenuTrigger>
                             <DropdownMenuContent>
                                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                                 <DropdownMenuSeparator />
@@ -125,6 +128,5 @@ export default function SideBar() {
                 </div>
             </div>
         </ScrollArea >
-
     )
 }
