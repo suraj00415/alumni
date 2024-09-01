@@ -105,7 +105,7 @@ export default function SideBar() {
                 <div className="flex items-center gap-3">
                     <div className="">
                         <DropdownMenu>
-                            <DropdownMenuTrigger className="rounded-full border-2 border-orange-500"><img src="src/assets/images/p1.jpg" alt="" className="size-12 rounded-full" /></DropdownMenuTrigger>
+                            <DropdownMenuTrigger className="rounded-full border-2 border-orange-500"><img src="https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/qz4t9inrgnr4ojh4rcal.jpg" alt="" className="size-12 rounded-full" /></DropdownMenuTrigger>
                             <DropdownMenuContent>
                                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                                 <DropdownMenuSeparator />

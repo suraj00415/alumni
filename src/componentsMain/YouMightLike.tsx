@@ -3,9 +3,9 @@ import PersonCard from "./PersonCard";
 
 export default function YouMightLike() {
     const profiles = [
-        { name: "IIT Bombay", handle: "@TezpurUniv", imgSrc: "src/assets/images/iitbombay.png" },
-        { name: "PDEU, Gandhinagar", handle: "@deeppatel0586", imgSrc: "src/assets/images/pdeu.png" },
-        { name: "IIIT Vadodara", handle: "@lizbayleyphysio", imgSrc: "src/assets/images/iitvadodara.png" },
+        { name: "IIT Bombay", handle: "@iitBombay", imgSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187053/anubwpsfwxkwhqsbme2x.png" },
+        { name: "PDEU, Gandhinagar", handle: "@pdeuGandhinagar", imgSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/dtctq7tpf2f6bun5onco.png" },
+        { name: "IIIT Vadodara", handle: "@iiitvadodara", imgSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187053/ffbhyvtsqvoo8yysf5re.png" },
     ];
     return (
         <div className="flex flex-col mt-2">

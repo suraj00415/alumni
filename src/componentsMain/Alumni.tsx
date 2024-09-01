@@ -11,31 +11,31 @@ export default function Alumni() {
             name: "Aryan Mehta",
             description: "Data Scientist | AI Enthusiast",
             mutualConnections: "65 other mutual connections",
-            imageSrc: "src/assets/images/p2.jpg",
+            imageSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187052/bc9flsgmsodsvjgp9wpb.jpg",
         },
         {
             name: "Meera Singh",
             description: "Product Manager @Meta",
             mutualConnections: "80 other mutual connections",
-            imageSrc: "src/assets/images/p3.jpg",
+            imageSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/r2gj2gtkg7zhj1mzlnqk.jpg",
         },
         {
             name: "Arjun Verma",
             description: "UX Designer @Adobe",
             mutualConnections: "45 other mutual connections",
-            imageSrc: "src/assets/images/p4.jpg",
+            imageSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187052/gvetvpsaepzulassnboj.jpg",
         },
         {
             name: "Karan Bhatt",
             description: "Cybersecurity Analyst @Microsoft",
             mutualConnections: "60 other mutual connections",
-            imageSrc: "src/assets/images/p5.jpg",
+            imageSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/rbto0t3kxl4u9yrhpgsv.jpg",
         },
         {
             name: "Samay Gupta",
             description: "DevOps Engineer @Amazon",
             mutualConnections: "70 other mutual connections",
-            imageSrc: "src/assets/images/p6.jpg",
+            imageSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187052/muwlo1cdh3x2g7pao30n.jpg",
         },
     ];
 

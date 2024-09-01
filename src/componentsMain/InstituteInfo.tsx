@@ -17,10 +17,10 @@ export default function InstituteInfo() {
                 </div> */}
                 <div className="w-full relative">
                     <div>
-                        <img src="src/assets/images/nirma1.jpg" alt="" className="w-full h-72 object-cover rounded-xl" />
+                        <img src="https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/vo8qnmixumonporoi7kt.jpg" alt="" className="w-full h-72 object-cover rounded-xl" />
                     </div>
                     <div className="absolute -bottom-8 left-5 bg-white rounded-full p-2 ">
-                        <img src="src/assets/images/nirmalogo.png" alt="" className="size-24 " />
+                        <img src="https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725187054/knip9vpk4w95v9ce0acv.png" alt="" className="size-24 " />
                     </div>
                 </div>
                 <div className="flex justify-end gap-4 mt-2 items-center">
