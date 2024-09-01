@@ -50,7 +50,7 @@ export default function SideBar() {
                         <div className='mt-5 hover:bg-zinc-800 p-1 rounded-lg flex items-center pr-5 font-bold text-lg'>
                             {!isCommentOpen && <IoMdArrowDropright className='size-7 text-orange-400' />}
                             {isCommentOpen && <IoMdArrowDropdown className="size-7 text-orange-400" />}
-                            <div>My Menu</div>
+                            <div>Main Menu</div>
                         </div>
                     </CollapsibleTrigger>
                     <CollapsibleContent className='pl-5'>

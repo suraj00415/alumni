@@ -3,11 +3,11 @@ import MoreOptions from './shadcnuiWrappers/MoreOptions';
 
 export default function WhatsHappening() {
     const trends = [
-        { category: "Trending in India", topic: "#BoycottNetflix", posts: "1,066 posts" },
-        { category: "Trending", topic: "Arrest", posts: "149K posts" },
-        { category: "Entertainment · Trending", topic: "#TheGOAT", extra: "Trending with #Matta" },
-        { category: "Trending in India", topic: "#BEEF" },
-    ];
+        { category: "Trending in Education", topic: "#EdTechRevolution", posts: "12.5K posts" },
+        { category: "Education", topic: "Scholarships", posts: "45K posts" },
+        { category: "Learning · Trending", topic: "#LifelongLearning", extra: "Trending with #OnlineCourses" },
+        { category: "Trending in Education", topic: "#STEMEducation" }
+        ];
 
     return (
         <div className='mt-3'>
