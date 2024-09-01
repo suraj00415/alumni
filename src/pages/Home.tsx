@@ -6,8 +6,10 @@ export default function HomePage() {
     return (
         <div>
             <Navbar />
-            <div className="flex overflow-hidden">
-                <SideBar />
+            <div className="flex w-full">
+                <div className=''>
+                    <SideBar />
+                </div>
                 <div className='ml-10'>
                     <Posts />
                 </div>

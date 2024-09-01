@@ -44,7 +44,7 @@ export default function SideBar() {
     return (
         <ScrollArea className="w-64 bg-zinc-900  p-5 border-r border-zinc-700" style={{ height: scrollAreaHeight }}>
             <div className="">
-                <Collapsible>
+                <Collapsible open>
                     <CollapsibleTrigger className=' ' onClick={() => setIsCommentOpen((prev) => !prev)}>
                         <div className='mt-5 hover:bg-zinc-800 p-1 rounded-lg flex items-center pr-5 font-bold text-lg'>
                             {!isCommentOpen && <IoMdArrowDropright className='size-7 text-orange-400' />}
@@ -75,7 +75,7 @@ export default function SideBar() {
                         </div>
                     </CollapsibleContent>
                 </Collapsible>
-                <Collapsible>
+                <Collapsible open>
                     <CollapsibleTrigger className=' ' onClick={() => setIsCommentOpen2((prev) => !prev)}>
                         <div className='mt-5 hover:bg-zinc-800 p-1 rounded-lg flex items-center pr-5 font-bold text-lg'>
                             {!isCommentOpen2 && <IoMdArrowDropright className='size-7 text-orange-400' />}

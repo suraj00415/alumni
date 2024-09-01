@@ -5,7 +5,7 @@ export default function Alumni() {
             name: "Rohan Patel",
             description: "Software Engineer @Google",
             mutualConnections: "72 other mutual connections",
-            imageSrc: "src/assets/images/p1.jpg",
+            imageSrc: "https://res.cloudinary.com/dfu2zsjpw/image/upload/v1725188737/xlmj5bnqghzkcufrobc1.jpg",
         },
         {
             name: "Aryan Mehta",
